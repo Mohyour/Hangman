@@ -20,6 +20,8 @@ class Hangman:
       self.guessed_letters.append(letter)
     elif letter not in self.word and letter not in self.missed_letters:
       self.missed_letters.append(letter)
+    elif letter in self.guessed_letters or letter in self.missed_letters:
+      print "You already guessed that"
     else:
       return False
     return True
