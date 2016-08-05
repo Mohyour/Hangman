@@ -19,7 +19,7 @@ Start game by running the ***play_hangman.py*** file
 
 ###Contributions
 
-- Fuck the repository
+- Fork the repository
 - Make a commit
 - Push to new branch
-- Do a pull request
+- Raise a pull request
