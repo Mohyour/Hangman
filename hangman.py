@@ -63,7 +63,7 @@ class Hangman:
         elif letter not in self.word and letter not in self.missed_letters:
             self.missed_letters.append(letter)
         elif letter in self.guessed_letters or letter in self.missed_letters:
-            print "You already guessed that"
+            print("You already guessed that")
         else:
             return False
         return True
@@ -78,16 +78,16 @@ class Hangman:
         return fill
 
     def status(self):
-        print board[len(self.missed_letters)]
-        print 'Word: ' + self.fill_word()
-        print 'Letters Missed: ',
+        print(board[len(self.missed_letters)])
+        print('Word: ' + self.fill_word())
+        print('Letters Missed: '),
         for letter in self.missed_letters:
-            print letter,
-        print
-        print 'Letters Guessed: ',
+            print(letter),
+        print()
+        print('Letters Guessed: '),
         for letter in self.guessed_letters:
-            print letter,
-        print
+            print(letter),
+        print()
 
     def win(self):
         if '_' not in self.fill_word():
